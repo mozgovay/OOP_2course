@@ -12,7 +12,9 @@ class Plant {
 
     void growRoots() { roots++; }
     void growStem() { stem++; }
-    void printPlant() { System.out.println("Корни: " + roots + ", стебель: " + stem); }
+    void printPlant() {
+        System.out.println("Корни: " + roots + ", стебель: " + stem + ", листья: " + leaves);
+    }
 }
 
 class Tree extends Plant {
@@ -29,7 +31,9 @@ class Tree extends Plant {
 
     void growTrunk() { trunk++; }
     void changeCrown(String c) { crown = c; }
-    void printTree() { System.out.println("Ствол: " + trunk + ", крона: " + crown + ", кора: " + bark); }
+    void printTree() {
+        System.out.println("Ствол: " + trunk + ", крона: " + crown + ", кора: " + bark);
+    }
 }
 
 class ConiferousTree extends Tree {
@@ -46,7 +50,9 @@ class ConiferousTree extends Tree {
 
     void addCone() { cones++; }
     void dropNeedles() { System.out.println("Хвоя опала"); }
-    void printConiferous() { System.out.println("Хвоя: " + needles + ", шишек: " + cones); }
+    void printConiferous() {
+        System.out.println("Хвоя: " + needles + ", шишек: " + cones + ", смола: " + resin);
+    }
 }
 
 public class laba1 {
